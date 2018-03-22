@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(154, 154, 154, 0.51)  ;
+    -webkit-box-shadow: 0px 1px 7px -2px rgba(0,0,0,0.34);
+    box-shadow: 0px 1px 7px -2px rgba(0,0,0,0.34);
+}
+
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 1.5em;
+} 
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    
+    border-bottom: 1.5px solid rgba(255, 255, 255, 1);
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0.2rem;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+    -webkit-transition: border-bottom 0.2s ease;
+    -webkit-transition: border-bottom 0.2s;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+    border-bottom: 1.5px solid rgba(240, 95, 64, 1) !important;
+    
+}
+
+.facebook-menu:hover{
+    border-bottom: 1.5px solid rgba(255, 255, 255, 1) !important;
+    color:red;
+}
+
+.nav-link:list-child:hover {
+    color: #000 !important;
+    font-size:300px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 1) !important;
+}
+
+.fa-facebook-square{
+    display:inline-block;
+    color:#3b5998;
+    font-size:25px;
+    position:relative;
+    top:-1px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.fa-facebook-square:hover{
+    color:#8b9dc3;
+
+}
+
+/* HEADER */
+
+.header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url("../img/tloheader.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../img/tloheader.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-text {
+  margin-top: 300px;
+  position:absolute;
+  text-align: center;
+  top:55%;
+  left:50%;
+  padding:15px;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+    margin:0 auto;
+}
+
+.header-title
+{
+  color: #fff;
+  font-weight: 700;
+  font-size:70px;
+}
+
+.header-info{
+    font-size: 1.3em;
+}
+
+.header-hr{
+    border-color: #f05f40;
+    max-width: 50px;
+    border-width: 3px;
+    margin: 20px auto;
+    
+    
+}
+.header-text p{
+    color:#fff;
+    
+}
+
+.btn{
+    font-size:1.2em;
+    padding:0.3em 0.8em;
+    border-radius: 0;
+}
+.btn-portoflio {
+    border-color: #fff;
+    width:7em;
+    color: #fff;
+    border-radius: 0;
+    margin-right:20px;
+}
+
+.btn-kontakt{
+    border-color: #fff;
+    width:7em;
+    color: #fff;
+    border-radius: 0; 
+}
+.btn-kontakt:hover{
+    background-color:#f05f40;
+}
+
+.btn-kontakt:focus,
+.btn-kontakt:active
+.header-buttons{
+    background-color: #ff9130 !important;
+    
+}
+
+
+.arrow{
+  
+  border: solid #f05f40;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  margin:0 auto;
+  padding: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position:relative;
+  top:60px;
+  -webkit-animation-name: arrow;
+  animation-name: arrow;
+  -webkit-animation-duration: 2s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrow {
+    0%   {top: 60px;}
+    50%  {top: 70px;}
+    100% {top: 60px;}
+}
+
+
+
+/* SECTION ABOUT ME */
+
+.about{
+    margin-top: 100px;
+}
+.about-title{
+    margin-bottom:50px;
+    font-size: 2.5em;
+}
+
+.about-title:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.about-p {
+    font-size: 1em;
+    margin-bottom: 0.4em;
+}
+
+.about-history{
+   
+    padding: 0 3rem;
+    font-weight:300;
+}
+
+.btn-about{
+    margin-top:20px;
+    margin-bottom: 20px;
+    color: #e67e22;
+    border-color:#e67e22;
+    
+}
+
+
+.fa-envelope-o{
+    margin-right:5px;
+    
+}
+
+.btn-about:focus,
+.btn-about:hover{
+    border-color:rgb(240, 95, 64);
+    color:#fff !important;
+    background-color: rgb(240, 95, 64) !important;
+}
+
+
+
+
+/*SECTION OPTIONS*/
+
+.section-options{
+      margin-top: 100px;
+      padding-top:80px;
+      background-color: #f4f4f4;
+      padding-bottom: 70px;
+}
+
+.options-p::after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.options-header{
+    margin-bottom:10px;
+    font-size: 2.5em;
+}
+/*.options-icon{
+    display:block !important;
+    font-size: 3em;
+    
+}*/
+
+.options-icon
+{
+    display:block;
+    margin:0 auto;
+    width:70px;
+    height:auto;
+    margin-bottom: 1.2em;
+    fill: red;
+}
+
+.option-header {
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.btn-options {
+    margin-top:15px;
+    color:#e67e22;
+    border-color: #e67e22;
+    background-color:#fff;
+}
+
+.btn-options:focus,
+.btn-options:hover{
+    border-color:rgb(240, 95, 64);
+    color:#fff !important;
+    background-color: rgb(240, 95, 64) !important;
+}
+
+object{
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+    height:70px;
+    width:70px;
+    fill:red !important;
+    
+}
+
+
+/*SECTION CONTACT*/
+
+
+.section-contact{
+    color:#fff;
+    padding-top:70px;
+    min-height:300px;
+    text-align:center;
+    background-image: url("../img/background-contact.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-contact-header{
+    margin-bottom:30px;
+}
+.section-contact-text{
+    margin-bottom:30px;
+}
+
+.btn-faq{
+    color:#fff;
+    border-color: #c66c1c;
+    border-width: 2px;
+    background-color: #e67e22;
+   
+}
+
+/* SECTION-FOOTER */
+
+.footer{
+    padding-top:60px;
+    padding-bottom: 20px;
+    background-color:#f4f4f4;
+    color:#555;
+}
+
+.footer-license{
+    text-align:right;
+}
+
+.social-icons{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+.social-icons li{
+    display:inline-block;
+    color:#888;
+}
+
+.footer-icon{
+    font-size:30px;
+    margin-right:40px;
+    color:#555;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.footer-icon-last{
+    margin-right:0px;
+    font-size:30px;
+    color:#555;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+
+.fa.fa-facebook:hover{
+    color:#3b5998;
+}
+
+.fa.fa-envelope:hover{
+    color:#dd4b39;
+}
+
+.fa.fa-vimeo:hover{
+    color:#1ab7ea;
+}
+
+
+/*** PAGE PRODUCTION ***/
+
+.content{
+    margin-top:120px;
+    
+}
+.page-title{
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+
+.subtitle {
+  margin: 0 auto;
+     display:block;
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color:#a7a7a7;
+    font-size:20px;
+}
+
+.portfolio-text{
+    text-align:center;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  margin-bottom: 20px;
+   
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  
+  border-top: 1px solid #e67e22;
+  top: 5px;
+  width: 50px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 10px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+.video-list{
+    padding-top:20px;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-bottom:50px;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* KONTAKT PAGE */
+
+.contact-text{
+    color:#a7a7a7;
+}
+.container-form{
+   margin-top:30px; 
+}
+input,textarea {
+    margin-bottom: 20px;
+}
+.form-control{
+    border-radius:0;
+}
+
+.input-group-btn{
+   
+    text-align:center;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+.btn-send,
+.btn-send:hover{
+    background-color:transparent;
+    border-color:#e67e22;
+    color: #e67e22;
+}
+
+.btn-send:focus,
+.btn-send:active
+{
+    background-color:#e67e22 !important;
+    color: #fff;
+    border-color:#e67e22;
+}
+
+.contact-icons{
+    text-align:center;
+}
+
+.icon-contact-container{
+    padding-right:0;
+    padding-left: 0;
+    margin-top:20px;
+    text-align:center;
+}
+.icon-contact{
+    font-size:40px;
+    display:block;
+    color:#e67e22;
+}
+
+.contact-icon-text{
+    margin-top:7px;
+    color:#a7a7a7;
+}
+#map{
+    margin:30px 0;
+    height:300px;
+}
